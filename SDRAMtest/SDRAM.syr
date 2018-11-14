@@ -1,0 +1,969 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Reading design: SDRAM.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "SDRAM.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "SDRAM"
+Output Format                      : NGC
+Target Device                      : xc3s400-5-ft256
+
+---- Source Options
+Top Module Name                    : SDRAM
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Block
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "//mac/home/Desktop/DesignPJ1/SDRAMtest/EppCtrl.vhd" in Library work.
+Architecture behavioral of Entity eppctrl is up to date.
+Compiling vhdl file "//mac/home/Desktop/DesignPJ1/SDRAMtest/NexysOnBoardMemCtrl.vhd" in Library work.
+Architecture behavioral of Entity nexysonboardmemctrl is up to date.
+Compiling vhdl file "//mac/home/Desktop/DesignPJ1/SDRAMtest/CompSel.vhd" in Library work.
+Architecture behavioral of Entity compsel is up to date.
+Compiling vhdl file "//mac/home/Desktop/DesignPJ1/SDRAMtest/vga_buffer.vhd" in Library work.
+Architecture behavioral of Entity vga_buffer is up to date.
+Compiling vhdl file "//mac/home/Desktop/DesignPJ1/SDRAMtest/fsm.vhd" in Library work.
+Architecture behavioral of Entity fsm is up to date.
+Compiling vhdl file "//mac/home/Desktop/DesignPJ1/SDRAMtest/display_controller.vhd" in Library work.
+Architecture behavioural of Entity display_controller is up to date.
+Compiling vhdl file "//mac/home/Desktop/DesignPJ1/SDRAMtest/memory.vhd" in Library work.
+Architecture behavioral of Entity memory is up to date.
+Compiling vhdl file "//mac/home/Desktop/DesignPJ1/SDRAMtest/InGameSdram.vhd" in Library work.
+Entity <ingamesdram> compiled.
+Entity <ingamesdram> (Architecture <behavioral>) compiled.
+Compiling vhdl file "//mac/home/Desktop/DesignPJ1/SDRAMtest/SDRAM.vhd" in Library work.
+Architecture behavioral of Entity sdram is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <SDRAM> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <vga_buffer> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <fsm> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <display_controller> in library <work> (architecture <behavioural>).
+
+Analyzing hierarchy for entity <memory> in library <work> (architecture <BEHAVIORAL>).
+
+Analyzing hierarchy for entity <InGameSdram> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <EppCtrl> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <NexysOnBoardMemCtrl> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <CompSel> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <SDRAM> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "//mac/home/Desktop/DesignPJ1/SDRAMtest/SDRAM.vhd" line 225: Unconnected output port 'out_valid' of component 'display_controller'.
+Entity <SDRAM> analyzed. Unit <SDRAM> generated.
+
+Analyzing Entity <vga_buffer> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:790 - "//mac/home/Desktop/DesignPJ1/SDRAMtest/vga_buffer.vhd" line 60: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1432 - Contents of array <mem> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <mem> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+WARNING:Xst:790 - "//mac/home/Desktop/DesignPJ1/SDRAMtest/vga_buffer.vhd" line 69: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1432 - Contents of array <mem> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <mem> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+WARNING:Xst:790 - "//mac/home/Desktop/DesignPJ1/SDRAMtest/vga_buffer.vhd" line 71: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1432 - Contents of array <mem> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <mem> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+Entity <vga_buffer> analyzed. Unit <vga_buffer> generated.
+
+Analyzing Entity <fsm> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:819 - "//mac/home/Desktop/DesignPJ1/SDRAMtest/fsm.vhd" line 59: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <counter>
+Entity <fsm> analyzed. Unit <fsm> generated.
+
+Analyzing Entity <display_controller> in library <work> (Architecture <behavioural>).
+Entity <display_controller> analyzed. Unit <display_controller> generated.
+
+Analyzing Entity <memory> in library <work> (Architecture <BEHAVIORAL>).
+WARNING:Xst:753 - "//mac/home/Desktop/DesignPJ1/SDRAMtest/memory.vhd" line 119: Unconnected output port 'MemCtrlEnabled' of component 'NexysOnBoardMemCtrl'.
+WARNING:Xst:753 - "//mac/home/Desktop/DesignPJ1/SDRAMtest/memory.vhd" line 119: Unconnected output port 'FlashByte' of component 'NexysOnBoardMemCtrl'.
+Entity <memory> analyzed. Unit <memory> generated.
+
+Analyzing Entity <EppCtrl> in library <work> (Architecture <behavioral>).
+    Set property "fsm_extract = no" for signal <stEppCur>.
+    Set property "fsm_encoding = user" for signal <stEppCur>.
+    Set property "signal_encoding = user" for signal <stEppCur>.
+    Set property "fsm_extract = no" for signal <stEppNext>.
+    Set property "fsm_encoding = user" for signal <stEppNext>.
+    Set property "signal_encoding = user" for signal <stEppNext>.
+WARNING:Xst:819 - "//mac/home/Desktop/DesignPJ1/SDRAMtest/EppCtrl.vhd" line 303: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <EppAstb>, <EppDstb>, <HandShakeReqIn>, <ctlEppDoneIn>
+Entity <EppCtrl> analyzed. Unit <EppCtrl> generated.
+
+Analyzing Entity <NexysOnBoardMemCtrl> in library <work> (Architecture <behavioral>).
+    Set property "fsm_extract = no" for signal <stMsmCur>.
+    Set property "fsm_encoding = user" for signal <stMsmCur>.
+    Set property "signal_encoding = user" for signal <stMsmCur>.
+    Set property "fsm_extract = no" for signal <stMsmNext>.
+    Set property "fsm_encoding = user" for signal <stMsmNext>.
+    Set property "signal_encoding = user" for signal <stMsmNext>.
+WARNING:Xst:819 - "//mac/home/Desktop/DesignPJ1/SDRAMtest/NexysOnBoardMemCtrl.vhd" line 661: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <ctlMsmStartIn>, <ComponentSelect>, <regEppAdrIn>, <ctlMcrWord>, <ctlEppRdCycleIn>, <regMemAdr>, <DelayCnt>, <busMemIn>
+Entity <NexysOnBoardMemCtrl> analyzed. Unit <NexysOnBoardMemCtrl> generated.
+
+Analyzing Entity <CompSel> in library <work> (Architecture <behavioral>).
+Entity <CompSel> analyzed. Unit <CompSel> generated.
+
+Analyzing Entity <InGameSdram> in library <work> (Architecture <Behavioral>).
+Entity <InGameSdram> analyzed. Unit <InGameSdram> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <vga_buffer>.
+    Related source file is "//mac/home/Desktop/DesignPJ1/SDRAMtest/vga_buffer.vhd".
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <right_shift> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <index2<31:9>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <index1<31:9>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+INFO:Xst:1439 - HDL ADVISOR - You may have used signed signal(s) to address this RAM. If that is the case, negative values being out of range, sign bits were ignored. As a result only the first half of the RAM is actually accessed. Please check your source code.
+    Found 320x16-bit dual-port RAM <Mram_mem> for signal <mem>.
+    Summary:
+	inferred   1 RAM(s).
+Unit <vga_buffer> synthesized.
+
+
+Synthesizing Unit <fsm>.
+    Related source file is "//mac/home/Desktop/DesignPJ1/SDRAMtest/fsm.vhd".
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk_100                   (rising_edge)        |
+    | Reset              | rst                       (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | readed                                         |
+    | Power Up State     | readed                                         |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 10-bit subtractor for signal <rd_addr>.
+    Found 10-bit register for signal <counter>.
+    Found 10-bit adder for signal <counter$addsub0000> created at line 83.
+    Found 11-bit comparator lessequal for signal <enable$cmp_le0000> created at line 61.
+    Found 11-bit comparator greatequal for signal <state$cmp_ge0000> created at line 75.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  10 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <fsm> synthesized.
+
+
+Synthesizing Unit <display_controller>.
+    Related source file is "//mac/home/Desktop/DesignPJ1/SDRAMtest/display_controller.vhd".
+    Found 1-bit register for signal <enable_vc>.
+    Found 32-bit up counter for signal <hc>.
+    Found 32-bit comparator greater for signal <out_hsync$cmp_gt0000> created at line 69.
+    Found 32-bit comparator lessequal for signal <out_hsync$cmp_le0000> created at line 69.
+    Found 32-bit comparator greatequal for signal <out_valid$cmp_ge0000> created at line 77.
+    Found 32-bit comparator greatequal for signal <out_valid$cmp_ge0001> created at line 77.
+    Found 32-bit comparator less for signal <out_valid$cmp_lt0000> created at line 77.
+    Found 32-bit comparator less for signal <out_valid$cmp_lt0001> created at line 77.
+    Found 32-bit comparator greater for signal <out_vsync$cmp_gt0000> created at line 71.
+    Found 32-bit comparator lessequal for signal <out_vsync$cmp_le0000> created at line 71.
+    Found 32-bit up counter for signal <vc>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   8 Comparator(s).
+Unit <display_controller> synthesized.
+
+
+Synthesizing Unit <InGameSdram>.
+    Related source file is "//mac/home/Desktop/DesignPJ1/SDRAMtest/InGameSdram.vhd".
+WARNING:Xst:646 - Signal <mul<31:23>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 17                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 9                                              |
+    | Clock              | clk_100                   (rising_edge)        |
+    | Reset              | rst                       (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | cs_refresh2                                    |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+WARNING:Xst:643 - "//mac/home/Desktop/DesignPJ1/SDRAMtest/InGameSdram.vhd" line 159: The result of a 32x10-bit multiplication is partially used. Only the 32 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+    Found 1-bit tristate buffer for signal <ram_we>.
+    Found 1-bit tristate buffer for signal <ram_cre>.
+    Found 1-bit tristate buffer for signal <ram_cs>.
+    Found 1-bit tristate buffer for signal <ram_adv>.
+    Found 23-bit tristate buffer for signal <output_addr>.
+    Found 1-bit tristate buffer for signal <ram_lb>.
+    Found 1-bit tristate buffer for signal <ram_oe>.
+    Found 1-bit tristate buffer for signal <ram_ub>.
+    Found 23-bit adder for signal <addr>.
+    Found 32-bit up counter for signal <brust_counter>.
+    Found 32-bit up counter for signal <counter>.
+    Found 32-bit up counter for signal <counter2>.
+    Found 32-bit up counter for signal <counter3>.
+    Found 32-bit comparator greatequal for signal <data_valid$cmp_ge0000> created at line 153.
+    Found 32x10-bit multiplier for signal <mul$mult0000> created at line 159.
+    Found 32-bit comparator less for signal <ram_adv$cmp_lt0000> created at line 166.
+    Found 32-bit comparator less for signal <ram_adv$cmp_lt0001> created at line 166.
+    Found 32-bit comparator less for signal <ram_cre$cmp_lt0000> created at line 162.
+    Found 32-bit comparator less for signal <ram_cre$cmp_lt0001> created at line 162.
+    Found 32-bit comparator greatequal for signal <ram_oe$cmp_ge0000> created at line 174.
+    Found 32-bit comparator greatequal for signal <ram_we$cmp_ge0000> created at line 170.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   4 Counter(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+	inferred   7 Comparator(s).
+	inferred  30 Tristate(s).
+Unit <InGameSdram> synthesized.
+
+
+Synthesizing Unit <EppCtrl>.
+    Related source file is "//mac/home/Desktop/DesignPJ1/SDRAMtest/EppCtrl.vhd".
+    Found 8-bit register for signal <regEppAdrOut>.
+    Found 8-bit tristate buffer for signal <EppDB>.
+    Found 1-bit register for signal <ctlEppRdCycleOut>.
+    Found 3-bit register for signal <stEppCur>.
+    Found 3-bit 8-to-1 multiplexer for signal <stEppNext>.
+    Summary:
+	inferred  12 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+	inferred   8 Tristate(s).
+Unit <EppCtrl> synthesized.
+
+
+Synthesizing Unit <NexysOnBoardMemCtrl>.
+    Related source file is "//mac/home/Desktop/DesignPJ1/SDRAMtest/NexysOnBoardMemCtrl.vhd".
+WARNING:Xst:647 - Input <RamWait> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <FlashStSts> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16-bit tristate buffer for signal <MemDB>.
+    Found 1-bit tristate buffer for signal <RamClk>.
+    Found 1-bit tristate buffer for signal <RamUB>.
+    Found 1-bit tristate buffer for signal <RamCre>.
+    Found 1-bit tristate buffer for signal <FlashCS>.
+    Found 1-bit tristate buffer for signal <MemOE>.
+    Found 23-bit tristate buffer for signal <MemAdr>.
+    Found 1-bit tristate buffer for signal <MemWR>.
+    Found 1-bit tristate buffer for signal <RamAdv>.
+    Found 1-bit tristate buffer for signal <FlashRp>.
+    Found 1-bit tristate buffer for signal <RamCS>.
+    Found 1-bit tristate buffer for signal <FlashByte>.
+    Found 1-bit tristate buffer for signal <RamLB>.
+    Found 5-bit up counter for signal <DelayCnt>.
+    Found 24-bit register for signal <regMemAdr>.
+    Found 8-bit adder for signal <regMemAdr_15_8$add0000> created at line 572.
+    Found 8-bit adder for signal <regMemAdr_23_16$add0000> created at line 589.
+    Found 8-bit adder for signal <regMemAdr_7_0$add0000> created at line 556.
+    Found 8-bit register for signal <regMemCtl>.
+    Found 8-bit register for signal <regMemRdData>.
+    Found 8-bit register for signal <regMemRdDataAux>.
+    Found 16-bit register for signal <regMemWrData>.
+    Found 4-bit register for signal <stMsmCur>.
+    Found 4-bit 16-to-1 multiplexer for signal <stMsmNext>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  68 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred   4 Multiplexer(s).
+	inferred  50 Tristate(s).
+Unit <NexysOnBoardMemCtrl> synthesized.
+
+
+Synthesizing Unit <CompSel>.
+    Related source file is "//mac/home/Desktop/DesignPJ1/SDRAMtest/CompSel.vhd".
+WARNING:Xst:647 - Input <regEppAdrIn<2:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <CompSel> synthesized.
+
+
+Synthesizing Unit <memory>.
+    Related source file is "//mac/home/Desktop/DesignPJ1/SDRAMtest/memory.vhd".
+Unit <memory> synthesized.
+
+
+Synthesizing Unit <SDRAM>.
+    Related source file is "//mac/home/Desktop/DesignPJ1/SDRAMtest/SDRAM.vhd".
+WARNING:Xst:647 - Input <BTN<2:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <hex_1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <hex_0> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <db> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <dataout> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <counter3> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <counter2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <counter1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <Sig_addr> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000.
+WARNING:Xst:1780 - Signal <Sig_RamWAIT1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <clk_25>.
+    Found 1-bit register for signal <clk_50>.
+    Found 32-bit up counter for signal <counter>.
+    Found 32-bit up counter for signal <counter4>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   2 D-type flip-flop(s).
+Unit <SDRAM> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 320x16-bit dual-port RAM                              : 1
+# Multipliers                                          : 1
+ 32x10-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 6
+ 10-bit adder                                          : 1
+ 10-bit subtractor                                     : 1
+ 23-bit adder                                          : 1
+ 8-bit adder                                           : 3
+# Counters                                             : 9
+ 32-bit up counter                                     : 8
+ 5-bit up counter                                      : 1
+# Registers                                            : 50
+ 1-bit register                                        : 43
+ 10-bit register                                       : 1
+ 3-bit register                                        : 1
+ 4-bit register                                        : 1
+ 8-bit register                                        : 4
+# Comparators                                          : 17
+ 11-bit comparator greatequal                          : 1
+ 11-bit comparator lessequal                           : 1
+ 32-bit comparator greatequal                          : 5
+ 32-bit comparator greater                             : 2
+ 32-bit comparator less                                : 6
+ 32-bit comparator lessequal                           : 2
+# Multiplexers                                         : 2
+ 3-bit 8-to-1 multiplexer                              : 1
+ 4-bit 16-to-1 multiplexer                             : 1
+# Tristates                                            : 22
+ 1-bit tristate buffer                                 : 18
+ 16-bit tristate buffer                                : 1
+ 23-bit tristate buffer                                : 2
+ 8-bit tristate buffer                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <SDRAM/state/FSM> on signal <state[1:8]> with one-hot encoding.
+--------------------------
+ State        | Encoding
+--------------------------
+ idle         | 00000001
+ load_brust   | 00000100
+ brust_read   | 00010000
+ stand_by     | 01000000
+ load_default | 10000000
+ update_addr  | 00100000
+ cs_refresh1  | 00001000
+ cs_refresh2  | 00000010
+--------------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <fsm_sd/state/FSM> on signal <state[1:2]> with sequential encoding.
+---------------------
+ State   | Encoding
+---------------------
+ full    | 10
+ filling | 01
+ readed  | 00
+---------------------
+
+Synthesizing (advanced) Unit <vga_buffer>.
+WARNING:Xst:3211 - Cannot use block RAM resources for signal <Mram_mem>. Please check that the RAM contents is read synchronously.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 320-word x 16-bit                   |          |
+    |     clkA           | connected to signal <clk_100>       | rise     |
+    |     weA            | connected to signal <enable>        | high     |
+    |     addrA          | connected to signal <wr_addr>       |          |
+    |     diA            | connected to signal <input_data>    |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 320-word x 16-bit                   |          |
+    |     addrB          | connected to signal <rd_addr>       |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <vga_buffer> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 2
+# RAMs                                                 : 1
+ 320x16-bit dual-port distributed RAM                  : 1
+# Multipliers                                          : 1
+ 32x10-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 6
+ 10-bit adder                                          : 1
+ 10-bit subtractor                                     : 1
+ 23-bit adder                                          : 1
+ 8-bit adder                                           : 3
+# Counters                                             : 8
+ 32-bit up counter                                     : 7
+ 5-bit up counter                                      : 1
+# Registers                                            : 92
+ Flip-Flops                                            : 92
+# Comparators                                          : 17
+ 11-bit comparator greatequal                          : 1
+ 11-bit comparator lessequal                           : 1
+ 32-bit comparator greatequal                          : 5
+ 32-bit comparator greater                             : 2
+ 32-bit comparator less                                : 6
+ 32-bit comparator lessequal                           : 2
+# Multiplexers                                         : 2
+ 3-bit 8-to-1 multiplexer                              : 1
+ 4-bit 16-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2042 - Unit SDRAM: 31 internal tristates are replaced by logic (pull-up yes): Sig_MemAdr<10>, Sig_MemAdr<11>, Sig_MemAdr<12>, Sig_MemAdr<13>, Sig_MemAdr<14>, Sig_MemAdr<15>, Sig_MemAdr<16>, Sig_MemAdr<17>, Sig_MemAdr<18>, Sig_MemAdr<19>, Sig_MemAdr<1>, Sig_MemAdr<20>, Sig_MemAdr<21>, Sig_MemAdr<22>, Sig_MemAdr<23>, Sig_MemAdr<2>, Sig_MemAdr<3>, Sig_MemAdr<4>, Sig_MemAdr<5>, Sig_MemAdr<6>, Sig_MemAdr<7>, Sig_MemAdr<8>, Sig_MemAdr<9>, Sig_MemOE, Sig_MemWR, Sig_RamADV, Sig_RamCLK, Sig_RamCRE, Sig_RamCS, Sig_RamLB, Sig_RamUB.
+WARNING:Xst:2042 - Unit InGameSdram: 30 internal tristates are replaced by logic (pull-up yes): output_addr<10>, output_addr<11>, output_addr<12>, output_addr<13>, output_addr<14>, output_addr<15>, output_addr<16>, output_addr<17>, output_addr<18>, output_addr<19>, output_addr<1>, output_addr<20>, output_addr<21>, output_addr<22>, output_addr<23>, output_addr<2>, output_addr<3>, output_addr<4>, output_addr<5>, output_addr<6>, output_addr<7>, output_addr<8>, output_addr<9>, ram_adv, ram_cre, ram_cs, ram_lb, ram_oe, ram_ub, ram_we.
+
+Optimizing unit <SDRAM> ...
+
+Optimizing unit <vga_buffer> ...
+
+Optimizing unit <fsm> ...
+
+Optimizing unit <display_controller> ...
+
+Optimizing unit <InGameSdram> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block SDRAM, actual ratio is 17.
+FlipFlop eppctroller/instNexysOnBoardMemCtrl/regMemAdr_0 has been replicated 1 time(s)
+FlipFlop fsm_sd/counter_0 has been replicated 2 time(s)
+FlipFlop fsm_sd/counter_1 has been replicated 2 time(s)
+FlipFlop fsm_sd/counter_2 has been replicated 3 time(s)
+FlipFlop fsm_sd/counter_3 has been replicated 2 time(s)
+FlipFlop vga_controller/hc_1 has been replicated 1 time(s)
+FlipFlop vga_controller/hc_2 has been replicated 1 time(s)
+FlipFlop vga_controller/hc_3 has been replicated 1 time(s)
+FlipFlop vga_controller/hc_4 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 345
+ Flip-Flops                                            : 345
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : SDRAM.ngr
+Top Level Output File Name         : SDRAM
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 80
+
+Cell Usage :
+# BELS                             : 1909
+#      GND                         : 1
+#      INV                         : 32
+#      LUT1                        : 135
+#      LUT2                        : 302
+#      LUT2_D                      : 7
+#      LUT2_L                      : 4
+#      LUT3                        : 111
+#      LUT3_D                      : 12
+#      LUT3_L                      : 4
+#      LUT4                        : 473
+#      LUT4_D                      : 13
+#      LUT4_L                      : 30
+#      MUXCY                       : 375
+#      MUXF5                       : 131
+#      MUXF6                       : 32
+#      MUXF7                       : 16
+#      VCC                         : 1
+#      XORCY                       : 230
+# FlipFlops/Latches                : 345
+#      FD                          : 8
+#      FDC                         : 160
+#      FDCE                        : 32
+#      FDE                         : 131
+#      FDP                         : 1
+#      FDR                         : 5
+#      FDS                         : 8
+# RAMS                             : 320
+#      RAM16X1D                    : 320
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 76
+#      IBUF                        : 7
+#      IOBUF                       : 24
+#      OBUF                        : 43
+#      OBUFT                       : 2
+# MULTs                            : 2
+#      MULT18X18                   : 2
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s400ft256-5 
+
+ Number of Slices:                      586  out of   3584    16%  
+ Number of Slice Flip Flops:            345  out of   7168     4%  
+ Number of 4 input LUTs:               1763  out of   7168    24%  
+    Number used as logic:              1123
+    Number used as RAMs:                640
+ Number of IOs:                          80
+ Number of bonded IOBs:                  77  out of    173    44%  
+ Number of MULT18X18s:                    2  out of     16    12%  
+ Number of GCLKs:                         3  out of      8    37%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | IBUF+BUFG              | 510   |
+clk_501                            | BUFG                   | 86    |
+main_clk                           | BUFGP                  | 69    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+BTN<0>                             | IBUF                   | 193   |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 7.711ns (Maximum Frequency: 129.681MHz)
+   Minimum input arrival time before clock: 6.429ns
+   Maximum output required time after clock: 17.498ns
+   Maximum combinational path delay: 13.503ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 7.711ns (frequency: 129.682MHz)
+  Total number of paths / destination ports: 21660 / 1823
+-------------------------------------------------------------------------
+Delay:               7.711ns (Levels of Logic = 12)
+  Source:            SDRAM/brust_counter_3 (FF)
+  Destination:       line_buffer/Mram_mem319 (RAM)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: SDRAM/brust_counter_3 to line_buffer/Mram_mem319
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.626   1.066  SDRAM/brust_counter_3 (SDRAM/brust_counter_3)
+     LUT1:I0->O            1   0.479   0.000  SDRAM/Mcompar_data_valid_cmp_ge0000_cy<0>_rt (SDRAM/Mcompar_data_valid_cmp_ge0000_cy<0>_rt)
+     MUXCY:S->O            1   0.435   0.000  SDRAM/Mcompar_data_valid_cmp_ge0000_cy<0> (SDRAM/Mcompar_data_valid_cmp_ge0000_cy<0>)
+     MUXCY:CI->O           1   0.056   0.000  SDRAM/Mcompar_data_valid_cmp_ge0000_cy<1> (SDRAM/Mcompar_data_valid_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  SDRAM/Mcompar_data_valid_cmp_ge0000_cy<2> (SDRAM/Mcompar_data_valid_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  SDRAM/Mcompar_data_valid_cmp_ge0000_cy<3> (SDRAM/Mcompar_data_valid_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  SDRAM/Mcompar_data_valid_cmp_ge0000_cy<4> (SDRAM/Mcompar_data_valid_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  SDRAM/Mcompar_data_valid_cmp_ge0000_cy<5> (SDRAM/Mcompar_data_valid_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  SDRAM/Mcompar_data_valid_cmp_ge0000_cy<6> (SDRAM/Mcompar_data_valid_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.056   0.000  SDRAM/Mcompar_data_valid_cmp_ge0000_cy<7> (SDRAM/Mcompar_data_valid_cmp_ge0000_cy<7>)
+     MUXCY:CI->O          11   0.265   0.995  SDRAM/Mcompar_data_valid_cmp_ge0000_cy<8> (SDRAM/data_valid_cmp_ge0000)
+     LUT4_D:I3->O          9   0.479   1.125  fsm_sd/enable_and0000 (sig_enable)
+     LUT2:I1->O           16   0.479   1.051  line_buffer/write_ctrl10 (line_buffer/write_ctrl10)
+     RAM16X1D:WE               0.322          line_buffer/Mram_mem11
+    ----------------------------------------
+    Total                      7.711ns (3.473ns logic, 4.238ns route)
+                                       (45.0% logic, 55.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_501'
+  Clock period: 7.044ns (frequency: 141.956MHz)
+  Total number of paths / destination ports: 1900 / 124
+-------------------------------------------------------------------------
+Delay:               7.044ns (Levels of Logic = 3)
+  Source:            eppctroller/instNexysOnBoardMemCtrl/stMsmCur_2 (FF)
+  Destination:       eppctroller/instNexysOnBoardMemCtrl/regMemRdData_6 (FF)
+  Source Clock:      clk_501 rising
+  Destination Clock: clk_501 rising
+
+  Data Path: eppctroller/instNexysOnBoardMemCtrl/stMsmCur_2 to eppctroller/instNexysOnBoardMemCtrl/regMemRdData_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              25   0.626   1.711  eppctroller/instNexysOnBoardMemCtrl/stMsmCur_2 (eppctroller/instNexysOnBoardMemCtrl/stMsmCur_2)
+     LUT3_D:I1->O          2   0.479   0.768  eppctroller/instNexysOnBoardMemCtrl/ctlMsmRAMCs_cmp_eq000111 (eppctroller/instNexysOnBoardMemCtrl/regMemRdData_cmp_eq0000)
+     LUT4_D:I3->O          7   0.479   0.929  eppctroller/instNexysOnBoardMemCtrl/regMemRdData_mux0000<0>4 (N15)
+     LUT4:I3->O            1   0.479   0.681  eppctroller/instNexysOnBoardMemCtrl/regMemRdData_mux0000<6>4 (eppctroller/instNexysOnBoardMemCtrl/regMemRdData_mux0000<6>4)
+     FDS:S                     0.892          eppctroller/instNexysOnBoardMemCtrl/regMemRdData_6
+    ----------------------------------------
+    Total                      7.044ns (2.955ns logic, 4.089ns route)
+                                       (41.9% logic, 58.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'main_clk'
+  Clock period: 7.507ns (frequency: 133.213MHz)
+  Total number of paths / destination ports: 3310 / 101
+-------------------------------------------------------------------------
+Delay:               7.507ns (Levels of Logic = 7)
+  Source:            vga_controller/hc_4 (FF)
+  Destination:       vga_controller/hc_31 (FF)
+  Source Clock:      main_clk rising
+  Destination Clock: main_clk rising
+
+  Data Path: vga_controller/hc_4 to vga_controller/hc_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q            325   0.626   3.025  vga_controller/hc_4 (vga_controller/hc_4)
+     LUT4:I3->O            1   0.479   0.000  vga_controller/hc_cmp_eq0000_wg_lut<3> (vga_controller/hc_cmp_eq0000_wg_lut<3>)
+     MUXCY:S->O            1   0.435   0.000  vga_controller/hc_cmp_eq0000_wg_cy<3> (vga_controller/hc_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  vga_controller/hc_cmp_eq0000_wg_cy<4> (vga_controller/hc_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  vga_controller/hc_cmp_eq0000_wg_cy<5> (vga_controller/hc_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  vga_controller/hc_cmp_eq0000_wg_cy<6> (vga_controller/hc_cmp_eq0000_wg_cy<6>)
+     MUXCY:CI->O          33   0.246   1.875  vga_controller/hc_cmp_eq0000_wg_cy<7> (vga_controller/hc_cmp_eq0000)
+     LUT2:I0->O            1   0.479   0.000  vga_controller/Mcount_hc_eqn_261 (vga_controller/Mcount_hc_eqn_26)
+     FDC:D                     0.176          vga_controller/hc_26
+    ----------------------------------------
+    Total                      7.507ns (2.607ns logic, 4.900ns route)
+                                       (34.7% logic, 65.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 422 / 411
+-------------------------------------------------------------------------
+Offset:              6.429ns (Levels of Logic = 6)
+  Source:            RamWAIT (PAD)
+  Destination:       fsm_sd/counter_9 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: RamWAIT to fsm_sd/counter_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   0.715   1.201  RamWAIT_IBUF (FX2_IO_OBUF)
+     LUT3_D:I0->LO         1   0.479   0.159  fsm_sd/counter_mux0001<2>111 (N414)
+     LUT3:I2->O            3   0.479   0.830  fsm_sd/counter_mux0001<4>6 (fsm_sd/counter_mux0001<4>6)
+     LUT3_D:I2->O          3   0.479   0.794  fsm_sd/counter_mux0001<6>11 (fsm_sd/N4)
+     LUT4_L:I3->LO         1   0.479   0.159  fsm_sd/counter_mux0001<9>22 (fsm_sd/counter_mux0001<9>22)
+     LUT4:I2->O            1   0.479   0.000  fsm_sd/counter_mux0001<9>43 (fsm_sd/counter_mux0001<9>)
+     FDC:D                     0.176          fsm_sd/counter_9
+    ----------------------------------------
+    Total                      6.429ns (3.286ns logic, 3.143ns route)
+                                       (51.1% logic, 48.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_501'
+  Total number of paths / destination ports: 208 / 145
+-------------------------------------------------------------------------
+Offset:              6.164ns (Levels of Logic = 5)
+  Source:            MemDB<7> (PAD)
+  Destination:       eppctroller/instNexysOnBoardMemCtrl/stMsmCur_1 (FF)
+  Destination Clock: clk_501 rising
+
+  Data Path: MemDB<7> to eppctroller/instNexysOnBoardMemCtrl/stMsmCur_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IOBUF:IO->O          26   0.715   1.841  MemDB_7_IOBUF (N166)
+     LUT4:I0->O            3   0.479   0.830  eppctroller/instNexysOnBoardMemCtrl/stMsmCur<3>_SW0 (N102)
+     LUT3:I2->O            1   0.479   0.000  eppctroller/instNexysOnBoardMemCtrl/Mmux_stMsmNext_5_f5_SW0_F (N244)
+     MUXF5:I0->O           1   0.314   0.851  eppctroller/instNexysOnBoardMemCtrl/Mmux_stMsmNext_5_f5_SW0 (N229)
+     LUT3:I1->O            1   0.479   0.000  eppctroller/instNexysOnBoardMemCtrl/stMsmCur<3> (eppctroller/instNexysOnBoardMemCtrl/stMsmNext<1>)
+     FD:D                      0.176          eppctroller/instNexysOnBoardMemCtrl/stMsmCur_1
+    ----------------------------------------
+    Total                      6.164ns (2.642ns logic, 3.522ns route)
+                                       (42.9% logic, 57.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'main_clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.672ns (Levels of Logic = 2)
+  Source:            BTN<0> (PAD)
+  Destination:       vga_controller/enable_vc (FF)
+  Destination Clock: main_clk rising
+
+  Data Path: BTN<0> to vga_controller/enable_vc
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           196   0.715   2.374  BTN_0_IBUF (BTN_0_IBUF)
+     INV:I->O             33   0.479   1.580  vga_controller/reset_inv1_INV_0 (SDRAM/rst_inv)
+     FDE:CE                    0.524          vga_controller/enable_vc
+    ----------------------------------------
+    Total                      5.672ns (1.718ns logic, 3.954ns route)
+                                       (30.3% logic, 69.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 1263 / 39
+-------------------------------------------------------------------------
+Offset:              14.787ns (Levels of Logic = 7)
+  Source:            SDRAM/counter3_16 (FF)
+  Destination:       MemAdr<23> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: SDRAM/counter3_16 to MemAdr<23>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.626   0.771  SDRAM/counter3_16 (SDRAM/counter3_16)
+     MULT18X18:A16->P21    1   3.605   0.851  SDRAM/Mmult_mul_mult0000_submult_0 (SDRAM/Mmult_mul_mult0000_submult_0_21)
+     LUT2:I1->O            1   0.479   0.000  SDRAM/Mmult_mul_mult00000_Madd_lut<21> (SDRAM/Mmult_mul_mult00000_Madd_lut<21>)
+     MUXCY:S->O            0   0.435   0.000  SDRAM/Mmult_mul_mult00000_Madd_cy<21> (SDRAM/Mmult_mul_mult00000_Madd_cy<21>)
+     XORCY:CI->O           1   0.786   0.851  SDRAM/Mmult_mul_mult00000_Madd_xor<22> (SDRAM/mul<22>)
+     LUT3:I1->O            1   0.479   0.000  MemAdr<23>2 (MemAdr<23>2)
+     MUXF5:I0->O           1   0.314   0.681  MemAdr<23>_f5 (MemAdr_23_OBUF)
+     OBUF:I->O                 4.909          MemAdr_23_OBUF (MemAdr<23>)
+    ----------------------------------------
+    Total                     14.787ns (11.633ns logic, 3.154ns route)
+                                       (78.7% logic, 21.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_501'
+  Total number of paths / destination ports: 1213 / 58
+-------------------------------------------------------------------------
+Offset:              17.498ns (Levels of Logic = 9)
+  Source:            eppctroller/instEppCtrl/regEppAdrOut_5 (FF)
+  Destination:       PDATA<7> (PAD)
+  Source Clock:      clk_501 rising
+
+  Data Path: eppctroller/instEppCtrl/regEppAdrOut_5 to PDATA<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.626   1.040  eppctroller/instEppCtrl/regEppAdrOut_5 (eppctroller/instEppCtrl/regEppAdrOut_5)
+     LUT2_D:I0->O          1   0.479   0.704  eppctroller/instNexysOnBoardMemCtrl/flagFlashAutoWr_cmp_eq00001_SW0 (N112)
+     LUT4_D:I3->O         19   0.479   1.403  eppctroller/instNexysOnBoardMemCtrl/flagFlashAutoWr_cmp_eq00001 (eppctroller/XLXN_1560)
+     LUT4:I1->O            8   0.479   1.216  eppctroller/instNexysOnBoardMemCtrl/EppRdDataOut<0>111 (N13)
+     LUT4:I0->O            1   0.479   0.976  eppctroller/instEppCtrl/busEppInternal<7>36_SW0 (N336)
+     LUT4:I0->O            1   0.479   0.704  eppctroller/instEppCtrl/busEppInternal<7>36 (eppctroller/instEppCtrl/busEppInternal<7>36)
+     LUT4:I3->O            1   0.479   0.704  eppctroller/instEppCtrl/busEppInternal<7>47 (eppctroller/instEppCtrl/busEppInternal<7>47)
+     LUT4:I3->O            1   0.479   0.704  eppctroller/instEppCtrl/busEppInternal<7>80_SW0 (N302)
+     LUT4:I3->O            1   0.479   0.681  eppctroller/instEppCtrl/busEppInternal<7>80 (eppctroller/instEppCtrl/busEppInternal<7>)
+     IOBUF:I->IO               4.909          PDATA_7_IOBUF (PDATA<7>)
+    ----------------------------------------
+    Total                     17.498ns (9.367ns logic, 8.131ns route)
+                                       (53.5% logic, 46.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'main_clk'
+  Total number of paths / destination ports: 3196 / 10
+-------------------------------------------------------------------------
+Offset:              13.703ns (Levels of Logic = 13)
+  Source:            vga_controller/hc_7 (FF)
+  Destination:       rgb<7> (PAD)
+  Source Clock:      main_clk rising
+
+  Data Path: vga_controller/hc_7 to rgb<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q            137   0.626   2.381  vga_controller/hc_7 (vga_controller/hc_7)
+     LUT1:I0->O            1   0.479   0.000  vga_controller/Mcompar_out_valid_cmp_ge0000_cy<2>_rt (vga_controller/Mcompar_out_valid_cmp_ge0000_cy<2>_rt)
+     MUXCY:S->O            1   0.435   0.000  vga_controller/Mcompar_out_valid_cmp_ge0000_cy<2> (vga_controller/Mcompar_out_valid_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  vga_controller/Mcompar_out_valid_cmp_ge0000_cy<3> (vga_controller/Mcompar_out_valid_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  vga_controller/Mcompar_out_valid_cmp_ge0000_cy<4> (vga_controller/Mcompar_out_valid_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  vga_controller/Mcompar_out_valid_cmp_ge0000_cy<5> (vga_controller/Mcompar_out_valid_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  vga_controller/Mcompar_out_valid_cmp_ge0000_cy<6> (vga_controller/Mcompar_out_valid_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.056   0.000  vga_controller/Mcompar_out_valid_cmp_ge0000_cy<7> (vga_controller/Mcompar_out_valid_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.056   0.000  vga_controller/Mcompar_out_valid_cmp_ge0000_cy<8> (vga_controller/Mcompar_out_valid_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.264   0.976  vga_controller/Mcompar_out_valid_cmp_ge0000_cy<9> (vga_controller/Mcompar_out_valid_cmp_ge0000_cy<9>)
+     LUT4:I0->O           16   0.479   1.346  vga_controller/out_valid1 (vga_controller/out_valid)
+     LUT4:I0->O            1   0.479   0.000  vga_controller/out_rgb<7>1 (vga_controller/out_rgb<7>)
+     MUXF5:I1->O           1   0.314   0.681  vga_controller/out_rgb<7>_f5 (rgb_7_OBUF)
+     OBUF:I->O                 4.909          rgb_7_OBUF (rgb<7>)
+    ----------------------------------------
+    Total                     13.703ns (8.319ns logic, 5.385ns route)
+                                       (60.7% logic, 39.3% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 26 / 10
+-------------------------------------------------------------------------
+Delay:               13.503ns (Levels of Logic = 7)
+  Source:            MemDB<7> (PAD)
+  Destination:       PDATA<7> (PAD)
+
+  Data Path: MemDB<7> to PDATA<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IOBUF:IO->O          26   0.715   1.716  MemDB_7_IOBUF (N166)
+     LUT4:I1->O            1   0.479   0.976  eppctroller/instEppCtrl/busEppInternal<7>36_SW0 (N336)
+     LUT4:I0->O            1   0.479   0.704  eppctroller/instEppCtrl/busEppInternal<7>36 (eppctroller/instEppCtrl/busEppInternal<7>36)
+     LUT4:I3->O            1   0.479   0.704  eppctroller/instEppCtrl/busEppInternal<7>47 (eppctroller/instEppCtrl/busEppInternal<7>47)
+     LUT4:I3->O            1   0.479   0.704  eppctroller/instEppCtrl/busEppInternal<7>80_SW0 (N302)
+     LUT4:I3->O            1   0.479   0.681  eppctroller/instEppCtrl/busEppInternal<7>80 (eppctroller/instEppCtrl/busEppInternal<7>)
+     IOBUF:I->IO               4.909          PDATA_7_IOBUF (PDATA<7>)
+    ----------------------------------------
+    Total                     13.503ns (8.019ns logic, 5.484ns route)
+                                       (59.4% logic, 40.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 12.48 secs
+ 
+--> 
+
+Total memory usage is 306884 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   31 (   0 filtered)
+Number of infos    :    7 (   0 filtered)
+

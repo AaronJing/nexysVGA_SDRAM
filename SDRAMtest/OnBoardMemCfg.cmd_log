@@ -1,0 +1,1 @@
+sch2vhdl -intstyle ise -family spartan3 -tionly -w Y:/Desktop/DesignPJ1/SDRAMtest/OnBoardMemCfg.sch OnBoardMemCfg.vhi 

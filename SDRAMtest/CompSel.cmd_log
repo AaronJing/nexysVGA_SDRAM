@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/CompSel.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/CompSel.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-ft256-5 CompSel.ngc CompSel.ngd  

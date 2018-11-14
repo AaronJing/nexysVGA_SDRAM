@@ -1,0 +1,25 @@
+		Frequency	Period 		Data Width
+SDRAM     100Mhz	 10ns		 2Bytes
+
+VGA		25.175Mhz   39.7ns		 1Byte
+
+Design: 1. Line Buffer
+	    2. fifo Buffer
+
+1. Line Buffer: fill 640 pixels' rgb into buffer during vga blank period.
+ E.G. Horizontal counter is 800 maximum, we have to fill 640 Bytes into buffer
+ during 0<=HC<=159
+   	rough estimate: 
+   	time for filling one line : 320 words * 10 ns = 3200 ns
+   	time for blank 160 * 40 = 6400 ns
+   	3200 << 6400 
+   	Fast enough
+
+2. FiFo Buffer: works only if SDRAM output data is faster than VGA
+	
+
+Two configuration register
+
+
+Two user-accessible configuration registers define the device operation. The BCR defines how the CellularRAM interacts with the system memory bus and is nearly identical to its counterpart on burst mode Flash devices. The RCR is used to control how refresh is performed on the DRAM array. These registers are automatically loaded with default settings during power-up, and can be updated any time the devices are operating in a standby state.
+A DIDR provides information on the device manufacturer, CellularRAM generation, and the specific device configuration. The DIDR is read-only.

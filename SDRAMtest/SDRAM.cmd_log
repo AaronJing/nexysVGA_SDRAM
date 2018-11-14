@@ -1,0 +1,857 @@
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+netgen -intstyle ise -ar Structure -tm SDRAM -w -dir netgen/synthesis -ofmt vhdl -sim SDRAM.ngc SDRAM_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.xst" -ofn "Y:/Desktop/DesignPJ1/SDRAMtest/SDRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sdram.ucf -p xc3s400-ft256-5 SDRAM.ngc SDRAM.ngd  
+map -intstyle ise -p xc3s400-ft256-5 -cm area -ir off -pr off -c 100 -o SDRAM_map.ncd SDRAM.ngd SDRAM.pcf 
+par -w -intstyle ise -ol high -t 1 SDRAM_map.ncd SDRAM.ncd SDRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf 
+bitgen -intstyle ise -f SDRAM.ut SDRAM.ncd 

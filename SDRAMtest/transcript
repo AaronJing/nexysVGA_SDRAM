@@ -1,0 +1,136 @@
+# Reading C:/altera/10.1sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do {sdramTB.fdo} 
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 6.6d Compiler 2010.11 Nov  2 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Compiling entity ingamesdram
+# -- Compiling architecture behavioral of ingamesdram
+# Model Technology ModelSim ALTERA vcom 6.6d Compiler 2010.11 Nov  2 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity sdramtb
+# -- Compiling architecture behavior of sdramtb
+# vsim -lib work -voptargs=\"+acc\" -t 1ps work.sdramTB 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading work.sdramtb(behavior)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.ingamesdram(behavioral)
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+restart
+run -all
+# ** Failure: Simulation successful (not a failure).  No problems detected.
+#    Time: 100160 ns  Iteration: 0  Process: /sdramtb/stim_proc File: sdramTB.vhd
+# Break in Process stim_proc at sdramTB.vhd line 165
+# WARNING: No extended dataflow license exists
+restart
+run -all
+# ** Failure: Simulation successful (not a failure).  No problems detected.
+#    Time: 100160 ns  Iteration: 0  Process: /sdramtb/stim_proc File: sdramTB.vhd
+# Break in Process stim_proc at sdramTB.vhd line 165
+do {sdramTB.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 6.6d Compiler 2010.11 Nov  2 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Compiling entity ingamesdram
+# -- Compiling architecture behavioral of ingamesdram
+# Model Technology ModelSim ALTERA vcom 6.6d Compiler 2010.11 Nov  2 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity sdramtb
+# -- Compiling architecture behavior of sdramtb
+# vsim -lib work -voptargs=\"+acc\" -t 1ps work.sdramTB 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading work.sdramtb(behavior)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.ingamesdram(behavioral)
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+restart
+run -all
+# ** Failure: Simulation successful (not a failure).  No problems detected.
+#    Time: 100160 ns  Iteration: 0  Process: /sdramtb/stim_proc File: sdramTB.vhd
+# Break in Process stim_proc at sdramTB.vhd line 165
+do {sdramTB.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 6.6d Compiler 2010.11 Nov  2 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Compiling entity ingamesdram
+# -- Compiling architecture behavioral of ingamesdram
+# Model Technology ModelSim ALTERA vcom 6.6d Compiler 2010.11 Nov  2 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity sdramtb
+# -- Compiling architecture behavior of sdramtb
+# vsim -lib work -voptargs=\"+acc\" -t 1ps work.sdramTB 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading work.sdramtb(behavior)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.ingamesdram(behavioral)
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+restart
+run -all
+# ** Failure: Simulation successful (not a failure).  No problems detected.
+#    Time: 100160 ns  Iteration: 0  Process: /sdramtb/stim_proc File: sdramTB.vhd
+# Break in Process stim_proc at sdramTB.vhd line 165
+do {sdramTB.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 6.6d Compiler 2010.11 Nov  2 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Compiling entity ingamesdram
+# -- Compiling architecture behavioral of ingamesdram
+# Model Technology ModelSim ALTERA vcom 6.6d Compiler 2010.11 Nov  2 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity sdramtb
+# -- Compiling architecture behavior of sdramtb
+# vsim -lib work -voptargs=\"+acc\" -t 1ps work.sdramTB 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading work.sdramtb(behavior)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.ingamesdram(behavioral)
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+restart
+run -all
+# ** Failure: Simulation successful (not a failure).  No problems detected.
+#    Time: 100160 ns  Iteration: 0  Process: /sdramtb/stim_proc File: sdramTB.vhd
+# Break in Process stim_proc at sdramTB.vhd line 165
+restart
+run -all
+# ** Failure: Simulation successful (not a failure).  No problems detected.
+#    Time: 100160 ns  Iteration: 0  Process: /sdramtb/stim_proc File: sdramTB.vhd
+# Break in Process stim_proc at sdramTB.vhd line 165

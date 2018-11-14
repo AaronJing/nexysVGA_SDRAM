@@ -1,0 +1,7 @@
+MODULE OnBoardMemCfg
+	SUBMODULE NexysOnBoardMemCtrl
+		INSTANCE instNexysOnBoardMemCtrl
+	SUBMODULE EppCtrl
+		INSTANCE instEppCtrl
+	SUBMODULE CompSel
+		INSTANCE XLXI_1

@@ -1,0 +1,199 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml SDRAM.twx SDRAM.ncd -o SDRAM.twr SDRAM.pcf -ucf sdram.ucf
+
+Design file:              SDRAM.ncd
+Physical constraint file: SDRAM.pcf
+Device,package,speed:     xc3s400,ft256,-5 (PRODUCTION 1.39 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock CLK
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+BTN<0>      |    7.372(R)|    0.339(R)|CLK_IBUF          |   0.000|
+MemDB<0>    |    6.250(R)|   -0.923(R)|CLK_IBUF          |   0.000|
+MemDB<1>    |    5.896(R)|   -1.080(R)|CLK_IBUF          |   0.000|
+MemDB<2>    |    6.941(R)|   -0.941(R)|CLK_IBUF          |   0.000|
+MemDB<3>    |    9.046(R)|   -0.714(R)|CLK_IBUF          |   0.000|
+MemDB<4>    |    7.416(R)|   -1.331(R)|CLK_IBUF          |   0.000|
+MemDB<5>    |    6.045(R)|   -1.173(R)|CLK_IBUF          |   0.000|
+MemDB<6>    |    5.277(R)|   -1.555(R)|CLK_IBUF          |   0.000|
+MemDB<7>    |    7.285(R)|   -1.654(R)|CLK_IBUF          |   0.000|
+MemDB<8>    |    6.374(R)|    0.139(R)|CLK_IBUF          |   0.000|
+MemDB<9>    |    4.122(R)|   -0.161(R)|CLK_IBUF          |   0.000|
+MemDB<10>   |    5.246(R)|   -0.388(R)|CLK_IBUF          |   0.000|
+MemDB<11>   |    6.176(R)|   -0.878(R)|CLK_IBUF          |   0.000|
+MemDB<12>   |    7.164(R)|   -0.899(R)|CLK_IBUF          |   0.000|
+MemDB<13>   |    4.553(R)|   -1.009(R)|CLK_IBUF          |   0.000|
+MemDB<14>   |    4.214(R)|   -0.904(R)|CLK_IBUF          |   0.000|
+MemDB<15>   |    4.955(R)|   -0.876(R)|CLK_IBUF          |   0.000|
+RamWAIT     |    7.444(R)|   -1.495(R)|CLK_IBUF          |   0.000|
+SW          |    3.870(R)|   -0.812(R)|CLK_IBUF          |   0.000|
+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock main_clk
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+BTN<0>      |    3.854(R)|   -1.768(R)|main_clk_BUFGP    |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock CLK to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+MemAdr<1>   |   13.500(R)|CLK_IBUF          |   0.000|
+MemAdr<2>   |   13.182(R)|CLK_IBUF          |   0.000|
+MemAdr<3>   |   13.051(R)|CLK_IBUF          |   0.000|
+MemAdr<4>   |   14.248(R)|CLK_IBUF          |   0.000|
+MemAdr<5>   |   13.412(R)|CLK_IBUF          |   0.000|
+MemAdr<6>   |   14.703(R)|CLK_IBUF          |   0.000|
+MemAdr<7>   |   13.652(R)|CLK_IBUF          |   0.000|
+MemAdr<8>   |   14.865(R)|CLK_IBUF          |   0.000|
+MemAdr<9>   |   15.369(R)|CLK_IBUF          |   0.000|
+MemAdr<10>  |   16.150(R)|CLK_IBUF          |   0.000|
+MemAdr<11>  |   15.592(R)|CLK_IBUF          |   0.000|
+MemAdr<12>  |   14.152(R)|CLK_IBUF          |   0.000|
+MemAdr<13>  |   13.958(R)|CLK_IBUF          |   0.000|
+MemAdr<14>  |   14.757(R)|CLK_IBUF          |   0.000|
+MemAdr<15>  |   15.790(R)|CLK_IBUF          |   0.000|
+MemAdr<16>  |   13.925(R)|CLK_IBUF          |   0.000|
+MemAdr<17>  |   16.747(R)|CLK_IBUF          |   0.000|
+MemAdr<18>  |   16.952(R)|CLK_IBUF          |   0.000|
+MemAdr<19>  |   18.128(R)|CLK_IBUF          |   0.000|
+MemAdr<20>  |   19.129(R)|CLK_IBUF          |   0.000|
+MemAdr<21>  |   17.671(R)|CLK_IBUF          |   0.000|
+MemAdr<22>  |   19.582(R)|CLK_IBUF          |   0.000|
+MemAdr<23>  |   19.597(R)|CLK_IBUF          |   0.000|
+MemOE       |   14.815(R)|CLK_IBUF          |   0.000|
+MemWR       |   15.201(R)|CLK_IBUF          |   0.000|
+RamADV      |   15.638(R)|CLK_IBUF          |   0.000|
+RamCLK      |   13.708(R)|CLK_IBUF          |   0.000|
+RamCRE      |   15.303(R)|CLK_IBUF          |   0.000|
+RamCS       |   11.325(R)|CLK_IBUF          |   0.000|
+RamLB       |   11.353(R)|CLK_IBUF          |   0.000|
+RamUB       |   11.363(R)|CLK_IBUF          |   0.000|
+rgb<0>      |   16.109(R)|CLK_IBUF          |   0.000|
+rgb<1>      |   16.166(R)|CLK_IBUF          |   0.000|
+rgb<2>      |   14.899(R)|CLK_IBUF          |   0.000|
+rgb<3>      |   14.304(R)|CLK_IBUF          |   0.000|
+rgb<4>      |   14.966(R)|CLK_IBUF          |   0.000|
+rgb<5>      |   14.379(R)|CLK_IBUF          |   0.000|
+rgb<6>      |   15.308(R)|CLK_IBUF          |   0.000|
+rgb<7>      |   15.454(R)|CLK_IBUF          |   0.000|
+------------+------------+------------------+--------+
+
+Clock main_clk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+hs          |   12.450(R)|main_clk_BUFGP    |   0.000|
+rgb<0>      |   20.918(R)|main_clk_BUFGP    |   0.000|
+rgb<1>      |   20.827(R)|main_clk_BUFGP    |   0.000|
+rgb<2>      |   19.570(R)|main_clk_BUFGP    |   0.000|
+rgb<3>      |   19.009(R)|main_clk_BUFGP    |   0.000|
+rgb<4>      |   19.320(R)|main_clk_BUFGP    |   0.000|
+rgb<5>      |   18.971(R)|main_clk_BUFGP    |   0.000|
+rgb<6>      |   19.312(R)|main_clk_BUFGP    |   0.000|
+rgb<7>      |   19.015(R)|main_clk_BUFGP    |   0.000|
+vs          |   14.158(R)|main_clk_BUFGP    |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    8.645|         |         |         |
+main_clk       |    7.677|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock main_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+main_clk       |    6.183|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+ASTB           |PDATA<0>       |    8.477|
+ASTB           |PDATA<1>       |    8.599|
+ASTB           |PDATA<2>       |    8.426|
+ASTB           |PDATA<3>       |    8.655|
+ASTB           |PDATA<4>       |    8.258|
+ASTB           |PDATA<5>       |    8.345|
+ASTB           |PDATA<6>       |    8.750|
+ASTB           |PDATA<7>       |    8.731|
+CLK            |RamCLK         |    9.754|
+MemDB<0>       |PDATA<0>       |   13.522|
+MemDB<1>       |PDATA<1>       |   11.817|
+MemDB<2>       |PDATA<2>       |   14.356|
+MemDB<3>       |PDATA<3>       |   14.256|
+MemDB<4>       |PDATA<4>       |   14.077|
+MemDB<5>       |PDATA<5>       |   13.853|
+MemDB<6>       |PDATA<6>       |   13.701|
+MemDB<7>       |PDATA<7>       |   13.572|
+MemDB<8>       |PDATA<0>       |   15.236|
+MemDB<9>       |PDATA<1>       |   12.981|
+MemDB<10>      |PDATA<2>       |   13.578|
+MemDB<11>      |PDATA<3>       |   15.148|
+MemDB<12>      |PDATA<4>       |   14.937|
+MemDB<13>      |PDATA<5>       |   14.292|
+MemDB<14>      |PDATA<6>       |   13.563|
+MemDB<15>      |PDATA<7>       |   13.951|
+RamWAIT        |FX2_IO         |    7.562|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Oct 18 01:21:28 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 174 MB
+
+
+

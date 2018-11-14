@@ -1,0 +1,66 @@
+m255
+K3
+13
+cModel Technology
+Z0 dY:\Desktop\DesignPJ1\SDRAMtest
+Eingamesdram
+Z1 w1539086038
+Z2 DPx4 ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 hEMVMlaNCR^<OOoVNV;m90
+Z4 DPx4 ieee 15 std_logic_arith 0 22 GJbAT?7@hRQU9IQ702DT]2
+Z5 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z6 dY:\Desktop\DesignPJ1\SDRAMtest
+Z7 8InGameSdram.vhd
+Z8 FInGameSdram.vhd
+l0
+L34
+VhEg]FA4O9n7H@78=feLHl3
+Z9 OV;C;6.6d;45
+31
+Z10 o-explicit -93 -O0
+Z11 tExplicit 1
+!s100 NHKSbmQmF^<F_jT1P991[1
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 11 ingamesdram 0 22 hEg]FA4O9n7H@78=feLHl3
+l87
+L64
+VV4l69L;WRDD?P;5QDFn=O0
+R9
+31
+Mx4 4 ieee 14 std_logic_1164
+Mx3 4 ieee 15 std_logic_arith
+Mx2 4 ieee 18 std_logic_unsigned
+Mx1 4 ieee 11 numeric_std
+R10
+R11
+!s100 i0H=W>^WTHXaXC__i^R0g0
+Esdramtb
+Z12 w1538673025
+R5
+R6
+Z13 8sdramTB.vhd
+Z14 FsdramTB.vhd
+l0
+L35
+V@N?5<^7>gn_fEa77lS4HU3
+!s100 n4AJSRLz[9Q8o38]34Pc;1
+R9
+31
+R10
+R11
+Abehavior
+R5
+Z15 DEx4 work 7 sdramtb 0 22 @N?5<^7>gn_fEa77lS4HU3
+l93
+L38
+Z16 VIk4Sm2HhGPfCdkecWkM@n3
+Z17 !s100 QC3[VLQMe=L3n]_1^HJGb2
+R9
+31
+Z18 Mx1 4 ieee 14 std_logic_1164
+R10
+R11
